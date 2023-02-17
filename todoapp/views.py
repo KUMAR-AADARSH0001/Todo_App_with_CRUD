@@ -37,5 +37,5 @@ def update(request, id):
             reg.save()
             return HttpResponse('Your Data Will Updated !!!...')
         else:
-            return HttpResponse('Your Data Will Updated !!!...')
+            return HttpResponse('Please Enter Valid Id')
     return render(request, 'todoapp/update.html', {'form': fm})
